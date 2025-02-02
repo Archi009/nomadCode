@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>momentum</title>
+</head>
+
+<body>
+  <!-- form 태그를 이용하면 유효성 검사를 좀 더 쉽게 할 수 있다.  -->
+   <!-- but submit 이벤트가 자동 발생하고 진행되기 때문에 막아줄 필요가 있다 설정한 이벤트가 아니라 enter 만 눌러도 진행된다 -->
+    <!-- 정리하자면 form 태그 안에서 엔터나 클릭시에 자동으로 발생하는 
+     subimt 이벤트로인해 브라우저가 새로고침 하지 않고  user정보를 저장하도로 하고싶다(유효성 검사를 진행) -->
+  <form id="login-form">
+    <input required maxlength="15" type="text" placeholder="what is your name?">
+    <button>Log In</button>
+  </form>
+  <script src="app.js"></script>
+</body>
+
+</html>
