@@ -11,7 +11,7 @@ function onLoginSubmit(info) {
   const username = loginInput.value;
   console.log(username);
 }
-//이벤트 리스너의 핸들러는 직접 실행하는것{()}이 아니라 브라우저가 실행해주는것, 그 안에 정보도 담아 준다는것.
+//이벤트 리스너의 핸들러는 직접 실행하는것{()}이 아니라 브라우저가 실행해주는것, 그 안에 이벤트의 정보도 담아 준다는것.
 //event : }information about the event that just happened}
 function handleLinkClick (event) {
   event.preventDefault();
