@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .hidden {
+        display: none;
+      }
+      .bold {
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form-submit">
+      <h1>Random Number Game</h1>
+      <label for="limit"
+        >Generate a number between 0 and
+        <input required min="0" name="limit" type="number"
+      /></label>
+      <br />
+      <label for="guess"
+        >Guess the number:
+        <input required min="0" name="guess" type="number" /></label
+      ><button>play</button>
+      <p class="hidden"></p>
+      <p class="hidden"></p>
+    </form>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
