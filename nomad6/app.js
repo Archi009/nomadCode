@@ -19,11 +19,11 @@ function onLoginSubmit(info) {
   localStorage.setItem(USERNAME_KEY,username);
   loginForm.classList.add("hidden");
   //input에서 매개변수를 가져온다
-  painrGreetings(username)
+  paintGreetings(username)
 
 }
 // 함수를 실행하는 위치에 따라서 매개변수가 달라진다.
-function painrGreetings(username){
+function paintGreetings(username){
   greeting.classList.remove(HIDDEN_CLASSNAME);
   greeting.innerText = `Hello ${username}`;
 }
@@ -38,5 +38,5 @@ if (savedUsername === null){
 }else{
   //show the greetings
   //localStorge 에서 매개변수값을 가져온다.
-  painrGreetings(savedUsername);
+  paintGreetings(savedUsername);
 }
